@@ -1,0 +1,20 @@
+.swiper.swiper-testimonials {
+  @apply h-[430px] !important;
+
+  .swiper-custom-prev,
+  .swiper-custom-next {
+    @apply w-8 h-8 bg-aseo-dark-2 hover:bg-aseo-primary active:bg-aseo-primary rounded-full absolute top-6 !important;
+
+    &::after {
+      content: "" !important;
+    }
+  }
+
+  .swiper-custom-prev {
+    @apply right-10 left-auto !important;
+  }
+
+  .swiper-custom-next {
+    @apply right-0 left-auto !important;
+  }
+}

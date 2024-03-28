@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Rubik", sans-serif;
+    box-sizing: border-box;
+    @apply text-zinc-800;
+}
+
+.header-nav {
+  height: calc(100vh - 70px);
+}
+
+.header-link {
+  @apply text-sm font-medium text-aseo-dark mb-4 hover:text-aseo-primary md:mb-0;
+}
+
+.swiper-custommers .swiper-slide {
+  @apply h-24 !important;
+}
+
+.page-container {
+  max-width: 85%;
+  @apply mx-auto;
+
+  @media (min-width: 1536px) {
+    max-width: 1440px;
+  }
+}
+
+.page-subtitle {
+  font-family: 'Gotham Bold';
+  font-size: 42px;
+
+  @media (min-width: 768px) {
+    font-size: 64px;
+    line-height: 76px;
+  }
+}
+
+.terms {
+  a {
+    @apply text-aseo-primary underline;
+  }
+}
