@@ -6,7 +6,7 @@
       La experiencia con <span class="text-aseo-primary">ASEO360</span>
     </h2>
 
-    <p class="text-aseo-dark mt-6">
+    <p class="text-aseo-gray-4 text-[18px] mt-6 lg:max-w-[857px]">
       Escucha lo que nuestros clientes tienen que decir sobre nuestra limpieza de colchones. Cada opinión refleja nuestro compromiso con la calidad y el bienestar que aportamos a sus hogares.
     </p>
 
@@ -77,10 +77,6 @@ export default {
           nextEl: ".swiper-custom-next",
           prevEl: ".swiper-custom-prev"
         },
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false
-        },
         loop: true
       },
       swiperOptionDesktop: {
@@ -89,10 +85,6 @@ export default {
         navigation: {
           nextEl: ".swiper-custom-next",
           prevEl: ".swiper-custom-prev"
-        },
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false
         },
         loop: true
       },

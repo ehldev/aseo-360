@@ -7,7 +7,7 @@
       Limpieza y cuidado sin precedentes
     </h2>
 
-    <p class="max-w-[760px] mt-8">
+    <p class="max-w-[760px] mt-8 text-aseo-gray-4">
       Descubre por qué ASEO360 es tu mejor opción para servicios de limpieza en
       Lima. Nos dedicamos a superar tus expectativas, ofreciendo no solo
       limpieza, sino tranquilidad, salud, y bienestar a través de nuestro
@@ -21,22 +21,7 @@
           v-for="(item, i) in list"
           :key="i"
         >
-          <div class="mb-6">
-            <div class="flex">
-              <img
-                :src="require(`@/assets/images/about/Icon-${i + 1}.svg`)"
-                alt=""
-                class="mr-2"
-              />
-              <h4 class="text-[20px] text-aseo-dark font-semibold">
-                {{ item.title }}
-              </h4>
-            </div>
-
-            <p class="mt-3">
-              {{ item.description }}
-            </p>
-          </div>
+          <AboutCard :data="item" :i="i" />
         </swiper-slide>
 
         <div class="swiper-pagination" slot="pagination"></div>
@@ -44,27 +29,16 @@
     </div>
 
     <div class="mt-8 hidden lg:grid lg:grid-cols-3 lg:gap-4">
-      <div class="mb-6" v-for="(item, i) in list" :key="i">
-        <div class="flex">
-          <img
-            :src="require(`@/assets/images/about/Icon-${i + 1}.svg`)"
-            alt=""
-            class="mr-2"
-          />
-          <h4 class="text-[20px] text-aseo-dark font-semibold">
-            {{ item.title }}
-          </h4>
-        </div>
-
-        <p class="mt-3">
-          {{ item.description }}
-        </p>
+      <div v-for="(item, i) in list" :key="i">
+        <AboutCard :data="item" :i="i" />
       </div>
     </div>
   </section>
 </template>
 
 <script>
+import AboutCard from "./about/AboutCard.vue";
+
 export default {
   name: "Aseo360",
   data() {
@@ -81,7 +55,7 @@ export default {
         {
           title: "Secado Completo",
           description:
-            "Nuestro servicio de limpieza de colchones asegura una entrega con secado total, listos para usarse inmediatamente después de nuestra intervención.",
+            "Nuestro servicio de limpieza de colchones asegura una entrega con secado total, listos para usarse el mismo día después de nuestra intervención.",
           icon: "",
         },
         {
@@ -111,11 +85,18 @@ export default {
         {
           title: "Sostenibilidad",
           description:
-            " Optamos por técnicas y productos ecológicos, demostrando que una limpieza profunda puede ser amigable con el planeta.",
+            "Optamos por técnicas y productos ecológicos, demostrando que una limpieza profunda puede ser amigable con el planeta.",
           icon: "",
         },
       ],
     };
   },
+  components: {
+    AboutCard,
+  },
 };
 </script>
+
+<style lang="postcss">
+@import "~/assets/styles/components/home/about.css";
+</style>

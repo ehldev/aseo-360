@@ -7,6 +7,7 @@ const COLOR_DARK_2 = '#1A1D23'
 const COLOR_GRAY = '#343A40'
 const COLOR_GRAY_2 = '#929292'
 const COLOR_GRAY_3 = '#A7A8A9'
+const COLOR_GRAY_4 = '#596066'
 const COLOR_LIGHT = '#F9FAFB'
 // const COLOR_BLACK = '#101828'
 
@@ -48,6 +49,7 @@ module.exports = {
         'aseo-gray': COLOR_GRAY,
         'aseo-gray-2': COLOR_GRAY_2,
         'aseo-gray-3': COLOR_GRAY_3,
+        'aseo-gray-4': COLOR_GRAY_4,
         'aseo-light': COLOR_LIGHT,
         'aseo-gray-medium': '#E5E5E5'
       },

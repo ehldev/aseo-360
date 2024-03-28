@@ -22,7 +22,7 @@
 
       <button
         type="button"
-        class="h-[44px] text-white font-semibold bg-aseo-primary mt-2 px-6 rounded-md md:mt-4 animate__animated animate__fadeInRight animate__delay-2s"
+        class="h-[44px] text-white font-semibold bg-aseo-primary mt-4 px-6 rounded-md animate__animated animate__fadeInRight animate__delay-2s"
       >
         Contáctanos
       </button>

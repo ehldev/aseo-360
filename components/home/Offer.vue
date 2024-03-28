@@ -1,5 +1,5 @@
 <template>
-  <section class="offer container mt-6 mx-auto">
+  <section class="offer container mt-10 mx-auto md:mt-6">
 
     <h3 class="text-base font-medium text-aseo-primary">Oferta</h3>
 
