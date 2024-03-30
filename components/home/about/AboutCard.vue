@@ -2,7 +2,7 @@
   <div class="mb-6">
     <div class="flex">
       <img
-        :src="require(`@/assets/images/about/Icon-${i + 1}.svg`)"
+        :src="require(`@/assets/images/about/${imageFolder}/Icon-${i + 1}.svg`)"
         alt=""
         class="mr-2"
       />
@@ -22,7 +22,13 @@ export default {
   name: "AboutCard",
   props: {
     data: Object,
-    i: Number
+    i: Number,
+    type: String
+  },
+  computed: {
+    imageFolder() {
+      return this.type == 'main' ? 'list-1' : 'list-2'
+    }
   }
 };
 </script>

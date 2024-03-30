@@ -8,9 +8,10 @@
 
     <div class="grid grid-cols-1 gap-4 mt-10 lg:grid-cols-2">
       <div
-        class="py-6 px-6 bg-aseo-light rounded-2xl"
-        v-for="(item, i) in list"
+        class="py-6 px-6 bg-aseo-light rounded-2xl md:max-w-[546px]"
+        v-for="(item, i) in mainList"
         :key="i"
+        :class="(i == (mainList.length - 1) && type == 'secondary') ? 'col-span-2 mx-auto' : 'col-span-1'"
       >
         <h4
           class="w-[300px] text-[20px] bg-aseo-primary text-white text-center rounded-2xl mx-auto"
@@ -119,8 +120,48 @@ export default {
           ],
         },
       ],
+      list2: [
+        {
+          title: "Juego de muebles 321",
+          price: 200,
+          services: [
+            "Servicio a domicilio",
+            "Secado al 100%",
+            "Eliminación de ácaros",
+            "Eliminación de manchas",
+          ],
+        },
+        {
+          title: "Juego de muebles en L",
+          price: 220,
+          services: [
+            "Servicio a domicilio",
+            "Secado al 100%",
+            "Eliminación de ácaros",
+            "Eliminación de manchas",
+          ],
+        },
+        {
+          title: "Juego de muebles en C",
+          price: 240,
+          services: [
+            "Servicio a domicilio",
+            "Secado al 100%",
+            "Eliminación de ácaros",
+            "Eliminación de manchas",
+          ],
+        }
+      ]
     };
   },
+  props: {
+    type: String,
+  },
+  computed: {
+    mainList() {
+      return this.type == 'main' ? this.list : this.list2
+    }
+  }
 };
 </script>
 

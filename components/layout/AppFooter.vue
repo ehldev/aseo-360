@@ -118,7 +118,7 @@
               class="mr-2"
             />
             <a
-              href="https://wa.me/51970308546?text=Hola%20quiero%20información%20sobre%20sus%20servicios..."
+              href="https://wa.me/51970308546?text=Hola%20quiero%20información%20sobre%20sus%20servicios."
               target="_blank"
               class="text-aseo-gray-3"
               >+51 970 308 546</a

@@ -14,15 +14,11 @@
           Promoción del mes:10% de descuento en el segundo colchón
         </h2>
 
-        <h2 class="text-[40px] font-semibold leading-8 hidden lg:block">
-          <span class="block">Promoción del mes:</span> <span class="block">10% de descuento en el</span> segundo colchón
+        <h2 class="text-[40px] font-semibold leading-8 hidden lg:block" v-html="title">
         </h2>
 
         <p class="mt-6">
-          Este mes, tu segundo colchón recibe un 20% de descuento. Es el momento
-          perfecto para renovar la limpieza y frescura en todos tus espacios.
-          ¡No dejes pasar esta oportunidad única de disfrutar de un ambiente más
-          limpio y saludable con ASEO360!
+          {{ description }}
         </p>
       </div>
     </div>
@@ -32,6 +28,10 @@
 <script>
 export default {
   name: "Offer",
+  props: {
+    title: String,
+    description: String
+  }
 };
 </script>
 

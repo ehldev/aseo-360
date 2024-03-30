@@ -35,22 +35,24 @@
             </section>
 
             <!-- Mobile -->
-            <button
-              type="button"
-              class="h-[44px] md:hidden text-white bg-aseo-primary px-6 rounded-md animate__animated animate__zoomIn animate__delay-1s"
+            <a
+              href="https://wa.me/51970308546?text=Hola%20quiero%20información%20sobre%20sus%20servicios."
+              target="_blank"
+              class="flex justify-center items-center h-[44px] md:hidden text-white bg-aseo-primary px-6 rounded-md animate__animated animate__zoomIn animate__delay-1s"
             >
               Contáctanos
-            </button>
+            </a>
           </div>
         </nav>
 
         <!-- Desktop -->
-        <button
-          type="button"
-          class="h-[44px] hidden md:block text-white bg-aseo-primary px-6 rounded-md"
+        <a
+          href="https://wa.me/51970308546?text=Hola%20quiero%20información%20sobre%20sus%20servicios."
+          target="_blank"
+          class="h-[44px] hidden text-white bg-aseo-primary px-6 rounded-md md:flex md:items-center"
         >
           Contáctanos
-        </button>
+        </a>
 
         <button
           type="button"
@@ -85,7 +87,7 @@ export default {
         this.$smoothScroll({
           scrollTo: myEl,
           updateHistory: false,
-          offset: -25
+          offset: -25,
         });
       }, 400);
     },

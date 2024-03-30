@@ -2,19 +2,27 @@
   <section id="testimonies" class="container mt-[60px] md:mt-[140px] mx-auto">
     <h3 class="text-base text-aseo-primary font-medium" data-aos="zoom-in">Testimonios</h3>
 
-    <h2 class="text-3xl tracking-[-1.92px] font-semibold mt-4 md:text-5xl" data-aos="zoom-in" data-aos-delay="500">
+    <h2 class="text-3xl tracking-[-1.92px] font-semibold mt-4 md:text-5xl" v-if="type == 'main'">
       La experiencia con <span class="text-aseo-primary">ASEO360</span>
     </h2>
 
-    <p class="text-aseo-gray-4 text-[18px] mt-6 lg:max-w-[857px]">
+    <h2 class="text-3xl tracking-[-1.92px] font-semibold mt-4 md:text-5xl" v-else>
+      Historias de Éxito: La Diferencia <span class="text-aseo-primary">ASEO360</span>
+    </h2>
+
+    <p class="text-aseo-gray-4 text-[18px] mt-6 lg:max-w-[857px]" v-if="type == 'main'">
       Escucha lo que nuestros clientes tienen que decir sobre nuestra limpieza de colchones. Cada opinión refleja nuestro compromiso con la calidad y el bienestar que aportamos a sus hogares.
     </p>
 
+    <p class="text-aseo-gray-4 text-[18px] mt-6 lg:max-w-[857px]" v-else>
+      Descubre cómo hemos transformado espacios y vidas a través de nuestros servicios de limpieza. Cada testimonio es una prueba de nuestro compromiso con la excelencia y el cuidado detallado.
+    </p>
+
     <!-- Mobile -->
-    <swiper class="swiper swiper-testimonials mt-[62px] lg:hidden" :options="swiperOptionMobile" data-aos="zoom-in" data-aos-delay="500">
+    <swiper class="swiper swiper-testimonials mt-[62px] lg:hidden" :options="swiperOptionMobile">
       <swiper-slide
         class="flex justify-center items-center"
-        v-for="item in list"
+        v-for="item in mainList"
         :key="item"
       >
         <TestimonialCard :data="item" />
@@ -42,7 +50,7 @@
     >
       <swiper-slide
         class="flex justify-center items-center"
-        v-for="item in list"
+        v-for="item in mainList"
         :key="item"
       >
         <TestimonialCard :data="item" />
@@ -139,12 +147,72 @@ export default {
           address: 'Miraflores',
           comment: 'Dormir bien se ha convertido en mi nuevo normal, todo gracias al increíble trabajo en mi colchón.'
         }
+      ],
+      list2: [
+        {
+          name: 'A. Gómez',
+          address: 'San Borja',
+          comment: 'Sorprendente cómo revivieron mis muebles; ahora mi sala luce como de revista. Increíble cambio.'
+        },
+        {
+          name: 'B. Castillo',
+          address: 'Surquillo',
+          comment: 'El antes y después de mis muebles es impresionante. ¡Parecen nuevos! Muy agradecida por este servicio.'
+        },
+        {
+          name: 'C. Fernández',
+          address: 'Miraflores',
+          comment: 'No podía creer lo limpios y renovados que quedaron mis muebles. ¡Todo el proceso fue tan sencillo!'
+        },
+        {
+          name: 'D. Morales',
+          address: 'La Victoria',
+          comment: '¡Adiós manchas y olores viejos! Mis muebles tienen una nueva vida gracias a su excelente trabajo.'
+        },
+        {
+          name: 'E. Quispe',
+          address: 'Pueblo Libre',
+          comment: 'Estoy asombrado con la calidad de la limpieza. Mis muebles parecen haber vuelto en el tiempo.'
+        },
+        {
+          name: 'F. López',
+          address: 'San Miguel',
+          comment: 'Transformaron completamente la apariencia de mis muebles. La atención al detalle fue excepcional.'
+        },
+        {
+          name: 'G. Huamán',
+          address: 'Barranco',
+          comment: 'Mis muebles estaban desgastados y opacos, pero después de su servicio, brillan y huelen increíble.'
+        },
+        {
+          name: 'H. Silva',
+          address: 'Jesús María',
+          comment: 'Increíble cómo un servicio de limpieza puede transformar toda una habitación. Mis muebles lucen espectaculares.'
+        },
+        {
+          name: 'I. Torres',
+          address: 'Lince',
+          comment: 'Este servicio ha rejuvenecido mis muebles favoritos, devolviéndoles su color y suavidad original.'
+        },
+        {
+          name: 'J. Vásquez',
+          address: 'Chorrillos',
+          comment: 'Después de la limpieza, mis muebles lucen y se sienten lujosos. Un cambio notable que todos apreciamos en casa.'
+        }
       ]
     };
+  },
+  props: {
+    type: String,
   },
   components: {
     TestimonialCard,
   },
+  computed: {
+    mainList() {
+      return this.type == 'main' ? this.list : this.list2
+    }
+  }
 };
 </script>
 
