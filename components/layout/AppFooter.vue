@@ -140,26 +140,26 @@
         </ul>
 
         <div class="flex mt-7">
-          <a href="https://web.facebook.com/aseo.pe" target="_blank">
+          <a href="https://web.facebook.com/aseo360.pe" target="_blank">
             <img
               src="@/assets/images/footer/facebook.svg"
-              alt="aseo - Facebook"
+              alt="Aseo360 - Facebook"
             />
           </a>
 
-          <a href="" class="ml-8">
+          <a href="https://www.instagram.com/aseo360.pe" target="_blank" class="ml-8">
             <img
               src="@/assets/images/footer/instagram.svg"
-              alt="aseo - Facebook"
+              alt="Aseo360 - Instagram"
             />
           </a>
 
-          <a href="" class="ml-8">
+          <!-- <a href="" class="ml-8">
             <img
               src="@/assets/images/footer/tik-tok.svg"
-              alt="aseo - Facebook"
+              alt="Aseo360 - TikTok"
             />
-          </a>
+          </a> -->
         </div>
 
         <h3 class="text-[22px] text-white font-bold mt-16">
