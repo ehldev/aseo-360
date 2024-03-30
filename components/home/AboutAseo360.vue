@@ -8,9 +8,9 @@
     </h2>
 
     <p class="max-w-[760px] mt-8 text-aseo-gray-4">
-      Descubre por qué ASEO360 es tu mejor opción para servicios de limpieza en
-      Lima. Nos dedicamos a superar tus expectativas, ofreciendo no solo
-      limpieza, sino tranquilidad, salud, y bienestar a través de nuestro
+      Descubre por qué ASEO360 es tu mejor opción para servicios de limpieza de
+      colchones en Lima. Nos dedicamos a superar tus expectativas, ofreciendo no
+      solo limpieza, sino tranquilidad, salud, y bienestar a través de nuestro
       trabajo meticuloso y personalizado.
     </p>
 

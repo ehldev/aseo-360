@@ -5,7 +5,7 @@
       <div class="text-white lg:w-[402px]">
         <h3 class="text-[22px] text-white font-bold">ASEO360</h3>
 
-        <div class="flex items-center mt-1 mb-[18px]">
+        <div class="flex items-center mt-1 mb-[18px] lg:mb-6">
           <div class="h-[2px] w-[17px] bg-aseo-primary mr-1"></div>
           <div class="h-[2px] w-[74px] bg-aseo-primary"></div>
         </div>
@@ -79,12 +79,12 @@
           Nuestros servicios
         </h3>
 
-        <div class="flex items-center mt-1 mb-[18px]">
+        <div class="flex items-center mt-1 mb-[18px] lg:mb-6">
           <div class="h-[2px] w-[17px] bg-aseo-primary mr-1"></div>
           <div class="h-[2px] w-[74px] bg-aseo-primary"></div>
         </div>
 
-        <ul class="text-[15px] text-aseo-gray-3 list-disc pl-4 lg:pl-0">
+        <ul class="text-[15px] text-aseo-gray-3 list-disc pl-6">
           <li>Limpieza de colchones</li>
           <li class="mt-2">Limpieza de muebles</li>
           <li class="mt-2">Lavado de alfombras</li>
@@ -95,7 +95,7 @@
       <div class="mt-8 lg:ml-[119px] lg:mt-0">
         <h3 class="text-[22px] text-white font-bold">Contáctanos</h3>
 
-        <div class="flex items-center mt-1 mb-[18px]">
+        <div class="flex items-center mt-1 mb-[18px] lg:mb-6">
           <div class="h-[2px] w-[17px] bg-aseo-primary mr-1"></div>
           <div class="h-[2px] w-[74px] bg-aseo-primary"></div>
         </div>
@@ -108,7 +108,7 @@
               class="mr-2"
             />
             <a href="tel:+51988320464" target="_blank" class="text-aseo-gray-3"
-              >+51 988 320 464</a
+              >+51 970 308 546</a
             >
           </li>
           <li class="flex items-center mt-4">
@@ -118,10 +118,10 @@
               class="mr-2"
             />
             <a
-              href="https://wa.me/51994386240?text=Hola%20quiero%20información%20sobre..."
+              href="https://wa.me/51970308546?text=Hola%20quiero%20información%20sobre%20sus%20servicios..."
               target="_blank"
               class="text-aseo-gray-3"
-              >+51 994 386 240</a
+              >+51 970 308 546</a
             >
           </li>
           <li class="flex items-center mt-4">
@@ -134,7 +134,7 @@
               href="mailto:publicidad@aseo.pe"
               target="_blank"
               class="text-aseo-gray-3"
-              >publicidad@aseo.pe</a
+              >ventas@aseo360.pe</a
             >
           </li>
         </ul>
@@ -169,12 +169,12 @@
         <div class="mt-[6px]">
           <div class="flex flex-col">
             <span class="text-white text-sm">R.U.C.</span>
-            <span class="text-aseo-gray-3 text-base">20601681651</span>
+            <span class="text-aseo-gray-3 text-base">20605848444</span>
           </div>
 
           <div class="flex flex-col mt-4">
             <span class="text-white text-sm">Razón Social</span>
-            <span class="text-aseo-gray-3 text-base">ASEO360 S.A.C.</span>
+            <span class="text-aseo-gray-3 text-base">SOLUCIONES TECNICAS <br> FIGUEROA E.I.R.L.</span>
           </div>
         </div>
       </div>
@@ -186,12 +186,10 @@
       <div
         class="flex flex-col py-[30px] lg:flex-row lg:justify-between items-center"
       >
-        <img src="@/assets/images/logo.svg" alt="Logo aseo" />
+        <img src="@/assets/images/logo-footer.svg" alt="Logo aseo" />
 
         <p class="text-aseo-gray-3 text-center mt-6 lg:mt-0 lg:text-left">
-          Forjado por
-          <a href="https://wize.pe" target="_blank" class="text-white">Wize</a>
-          © {{ year }}. Todos los derechos reservados
+          Todos los derechos reservados © {{ year }}. Forjado por <a href="https://wize.pe" target="_blank" class="text-white">Wize</a>
         </p>
       </div>
     </div>
